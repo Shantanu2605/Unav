@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Noto+Sans&family=Quicksand:wght@500&family=ZCOOL+XiaoWei&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+#navbar{
+    position: sticky;
+    top: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar ul{
+    display: flex;
+    list-style: none;
+    background-color: rgb(16 144 80);;
+    background-blend-mode: darken; 
+   
+} 
+#navbar ul li{
+    margin: 10px;
+} 
+#navbar ul img{
+    height:40px;
+    border-radius: 100%;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    list-style: none;
+    padding: 8px 8px;
+    font-size: large;
+    color: cyan;
+} 
+#navbar ul li a:hover{
+    border-bottom: 3px solid white;
+    color: white;
+    transition: 0.3s ease-in;
+    animation: nav 2s 1;
+}
+@keyframes nav {
+    25%{ border-bottom: 2px solid white;}
+    50%{ border-top: 2px solid white;}
+    100%{background-color: rgb(35, 35, 36);}    
+}
+.home{
+    margin-top: -19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: rgba(0, 0, 0, 0.7) url('bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+}
+.h-primary{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;;
+    font-size: 2.7rem;
+}
+.home p{
+    max-width: 193px;
+    font-size: 1.3rem;
+    color: orangered;
+    font-weight: 900;
+    padding-left: 10vh;
+    font-family: 'Quicksand', sans-serif;
+}
+.home .btn-main{
+    font-weight: bold;
+    font-family: 'Arvo', serif;;
+    font-size: 1.2rem;
+    background-color: rgb(43, 126, 43);
+    color: white;
+    padding: 3px 3px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-left: 10vh;
+    border: 2px solid rgb(43, 126, 43);
+}
+.home .btn-main:hover{
+    background-color: rgb(32, 110, 32);
+    color: white;
+    border: 2px solid rgb(32, 110, 32);
+
+}
+.navbox{
+    margin-top: 0px;
+}
+.sctop a{
+    font-weight: bold;
+    text-decoration: none;
+    background-color: blue;
+    border: 2px solid blue;
+    color: white;
+    border-radius: 50%;
+    position: fixed;
+    padding: 6px 16px;
+    bottom: 6px;
+    right: 14px;
+    font-size: 31px;
+  } .sctop a:hover{
+    background-color: rgb(0, 12, 122); } .sctop a:active{color: black;}
+
+.navbox .box {
+    max-width: 220vh;
+    display: flex;
+    margin-right: 30vh;
+    background-color: rgb(244 243 226 / 23%);;
+    border: 2px solid black;
+    margin-left: 35vh;
+    margin-top: 10vh;
+}
+.navbox .box img{
+    height: 15vh;
+}
+.navbox .box a{
+    font-family: 'ZCOOL XiaoWei', serif;
+    text-decoration: none;
+    padding-top: 4vh;
+    padding-left: 10vh;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: chocolate;
+    text-align: center;
+}
+.navbox .box a:hover{
+    text-decoration: underline;
+}
+
+#api{
+    height: 95vh;
+    background: rgba(0, 0, 0, 0.7) url('backapi.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    margin-top: 10vh;
+    border-top: 2px solid orange;
+}
+#api h1{
+    font-weight: bolder;
+    margin-top: 1vh;
+    color: orangered;
+}
+#api .first{
+    margin-top: 10vh;
+}
+#api p{
+    margin-left: 10vh;
+    color: rgb(213 9 245);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;;
+}
+#api .apibox{
+    display: flex;
+}
+#api .apibox .box-main{
+    margin: 25px 68px;
+    border: 2px solid olivedrab;
+    padding: 10px 10px;
+    border-radius: 15px;
+}
+#api .apibox .box-main a{
+    text-decoration: none;
+    color: coral;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+}
+#api .apibox .box-main img{
+    height: 25vh;
+}
+table {
+    font-family: 'Quicksand';
+    padding: 20px 20px;
+    margin-left: 45vh;
+    margin-top: 7vh;
+    border: 1px solid black;
+  }
+th, td{
+    font-size: 19px;
+    font-family: 'Quicksand';
+    padding: 20px 20px;
+}  
+
+.table{
+    background-color: white;
+    border-radius: 20px;
+} 
+th{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(165, 154, 154);
+} 
+td{
+    border-bottom: 2px solid black;
+    color: purple;
+}
+td a{
+    color: olivedrab;
+    text-decoration: none;
+}
+
+td a:hover{
+    text-decoration: underline;
+}
+.downloads{
+    margin-top: 5vh;
+}
+.downloads h1{
+    text-align: left;
+    color: blue;
+}
+.downloads p{
+    margin-top: 6vh;
+    color: crimson;
+    font-size: 19px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.downloads a{
+    padding: 2px 2px;
+    margin-left: 1vh;
+    color: white;
+    background-color: rgb(33 204 29);
+    border: 2px solid grey;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.downloads a:hover{
+    text-decoration: underline;
+    color: black;
+    background-color: rgb(226, 217, 217);
+}
+#unav{
+    height: 44vh;
+    background-color: antiquewhite;
+    margin-top: 5vh;
+}
+#unav h1{
+    color: rgb(5, 109, 128);
+}
+#unav p{
+    margin-top: 5vh;
+    font-weight: 600;
+    font-family: 'Noto Sans';
+    text-align: center;
+}
+.contact{
+    margin-top: -60px;
+    background-color: aliceblue;
+    justify-content: center;
+    height: 55vh;
+}
+.contact h1{
+    text-align: center;
+    color: black;
+    padding-top: 10vh;
+    margin-top: 8vh;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contact a{
+    border-radius: 15px;
+    margin-left: 90vh;
+    text-decoration: none;
+    color: wheat;
+    font-size: 20px;
+    border: 2px solid white;
+    background-color: grey;
+    padding: 5px 5px;
+}
+.contact a:hover{
+    background-color: black;
+    color: white;
+}
+.contact p{
+    margin: 15px 15px;
+    text-align: center;
+    color: rgb(232, 100, 100);
+    font-size: 22px;
+    font-family: 'Arvo';
+    padding-top: 12px;
+}
+
+
+

@@ -1,0 +1,64 @@
+#navbar ul{
+    width: 100%; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar ul li a {
+    font-size: 8.5px;
+    padding: 0px;
+}
+.navbox .box img {
+    height: 26vh;
+    margin-top: 15px;
+}
+#navbar ul li {
+    margin: 9px;
+}
+#navbar ul img {
+    height: 29px;
+}
+.downloads a {
+    padding: 0px;
+}
+.navbox .box {
+    max-width: 220vh;
+    display: flex;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10vh;
+}
+#api {
+    height: 100%;
+}
+#api .first {
+    margin-top: 5vh;
+}
+#api p {
+    margin-left: 3vh;
+}
+table {
+    font-family: 'Quicksand';
+    padding: 0px;
+    margin-left: 0px;
+    margin-top: 11px;
+}
+.table {
+    border-radius: 8px;
+}
+th, td {
+    font-size: 19px;
+    padding: 0px;
+}
+#unav {
+    height: 135vh;
+}
+.h-primary {
+    font-size: 1.9rem;
+}
+.contact a{
+    margin-left: 11vh;
+}
+.contact{
+    height: 100%;
+}
