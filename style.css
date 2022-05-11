@@ -49,7 +49,7 @@ html{
     justify-content: center;
     align-items: center;
     height: 90vh;
-    background: rgba(0, 0, 0, 0.7) url('bg.jpg');
+    background: rgba(0, 0, 0, 0.7) url('https://images.pexels.com/photos/691637/pexels-photo-691637.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: cover;
     background-blend-mode: darken;
     background-attachment: fixed;
@@ -70,22 +70,41 @@ html{
     font-family: 'Quicksand', sans-serif;
 }
 .home .btn-main{
-    font-weight: bold;
-    font-family: 'Arvo', serif;;
-    font-size: 1.2rem;
-    background-color: rgb(43, 126, 43);
-    color: white;
-    padding: 3px 3px;
+    background-color: black;
+    border: none;
+    font-family: 'Arvo';
+    color: #ffffff;
     text-decoration: none;
-    border-radius: 10px;
+    padding: 12px 40px 10px;
+    position: relative;
     margin-left: 10vh;
-    border: 2px solid rgb(43, 126, 43);
+  
 }
-.home .btn-main:hover{
-    background-color: rgb(32, 110, 32);
-    color: white;
-    border: 2px solid rgb(32, 110, 32);
+.home .btn-main:before,
+.home .btn-main::after{
+  border: 0 solid transparent;
+  transition: all 0.3s;
+  content: '';
+  height: 0;
+  position: absolute;
+  width: 24px;
+}
 
+.home .btn-main:before {
+  border-top: 2px solid black;
+  right: 0;
+  top: -4px;
+}
+
+.home .btn-main:after {
+  border-bottom: 2px solid black;
+  bottom: -4px;
+  left: 0;
+}
+
+.home .btn-main:hover:before,
+.home .btn-main:hover:after {
+  width: 100%;
 }
 .navbox{
     margin-top: 0px;
@@ -103,9 +122,10 @@ html{
     right: 14px;
     font-size: 31px;
   } .sctop a:hover{
-    background-color: rgb(0, 12, 122); } .sctop a:active{color: black;}
+    background-color: rgb(0, 12, 122); } 
 
 .navbox .box {
+    border-radius: 20px;
     max-width: 220vh;
     display: flex;
     margin-right: 30vh;
@@ -115,6 +135,7 @@ html{
     margin-top: 10vh;
 }
 .navbox .box img{
+    border-radius: 20px;
     height: 15vh;
 }
 .navbox .box a{
@@ -210,6 +231,7 @@ td a:hover{
     text-decoration: underline;
 }
 .downloads{
+    margin-left: 6vh;
     margin-top: 5vh;
 }
 .downloads h1{
@@ -226,34 +248,49 @@ td a:hover{
 .downloads a{
     padding: 2px 2px;
     margin-left: 1vh;
+    background-color: chocolate;
     color: white;
-    background-color: rgb(33 204 29);
-    border: 2px solid grey;
+    border-radius: 4px;
+    border: 2px solid chocolate;
     border-radius: 8px;
+    font-family: cursive;
     text-decoration: none;
 }
-.downloads a:hover{
-    text-decoration: underline;
-    color: black;
-    background-color: rgb(226, 217, 217);
+.downloads a:active{
+    color: white;
+    border: 2px solid rgb(194, 85, 7);
+    background-color: rgb(194, 85, 7);
 }
 #unav{
     height: 44vh;
-    background-color: antiquewhite;
+    background: rgba(0, 0, 0, 0.7) url('bgsun.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
     margin-top: 5vh;
 }
 #unav h1{
-    color: rgb(5, 109, 128);
+    color: crimson;
+    font-family: 'Arvo';
+}
+#unav .q-cont{
+    display: flex;
+}
+#unav .q-cont img{
+    height: 32vh;
+    border-radius: 50px;
+    margin-left: 16vh;
 }
 #unav p{
+    max-width: 1015px;
+    color: coral;
     margin-top: 5vh;
-    font-weight: 600;
     font-family: 'Noto Sans';
     text-align: center;
 }
 .contact{
     margin-top: -60px;
-    background-color: aliceblue;
+    background-color: #00ff8c;
     justify-content: center;
     height: 55vh;
 }
@@ -267,12 +304,13 @@ td a:hover{
 }
 .contact a{
     border-radius: 15px;
-    margin-left: 90vh;
+    margin-left: 85vh;
     text-decoration: none;
-    color: wheat;
+    color: white;
     font-size: 20px;
-    border: 2px solid white;
-    background-color: grey;
+    font-family: 'Quicksand';
+    border: 2px solid #483b3b;
+    background-color: #483b3b;
     padding: 5px 5px;
 }
 .contact a:hover{
@@ -282,7 +320,7 @@ td a:hover{
 .contact p{
     margin: 15px 15px;
     text-align: center;
-    color: rgb(232, 100, 100);
+    color: rgb(171, 29, 29);
     font-size: 22px;
     font-family: 'Arvo';
     padding-top: 12px;
